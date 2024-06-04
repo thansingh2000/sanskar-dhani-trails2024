@@ -82,19 +82,30 @@
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <label for="sel1" class="form-label"
+              <!-- <label for="sel1" class="form-label"
                 >Select Your Destination</label
+              > -->
+              <!-- <select
+                class="form-select"
+                id="sel1"
+                name="sellist1"
+                
               >
-              <select class="form-select" id="sel1" name="sellist1">
                 <option>Select Destination</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-              </select>
-              <br>
+                <option value="Bhedaghat">Bhedaghat</option>
+                <option value="GouriGhat">Gouri Ghat</option>
+              </select> -->
+              <!-- <br />
               <a href="question.html" class="btn-get-started"
                 >COLLECT FREE COINS<br
-              /></a>
+              /></a> -->
+                <h2>Select Your Destination</h2>
+                <br>
+              <div>
+                <a href="sanskardhani-trails/Bhedaghat.html" class="bg-warning p-2 color-black">Bhedaghat</a>
+                <a href="sanskardhani-trails\GauriGhat.html" class="bg-info p-2">Gouri Ghat</a>
+                <a href="bedaghat.html" class="bg-danger p-2">Madan Mahal</a>
+              </div>
             </div>
           </div>
         </div>
@@ -140,7 +151,14 @@
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script>
+      const dropdown = document.getElementById("sel1");
+
+        dropdown.addEventListener("change", function(event) {
+          const selectedValue = event.target.value;
+          alert("Selected value:", selectedValue);
+        });
+    </script>
   </body>
 </html>
